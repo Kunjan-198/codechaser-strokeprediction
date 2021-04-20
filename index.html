@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css" integrity="sha384-G9DpmGxRIF6tpgbrkZVcZDeIomEU22LgTguPAI739bbKytjPE/kHTK5YxjJAAEXC" crossorigin="anonymous">
+    <title>Stroke Predictor</title>
+    <style>
+        form
+        {
+        margin: 0 auto;
+        width:250px;
+        }
+        body
+        {
+        background-color: powderblue;
+        color:black;
+        border: 20px solid powderblue;
+        padding: 30px;
+        font-weight: bold;
+        }
+        h1
+        {
+         text-align: center;
+         color:DarkSlateGray ;
+          font-family: serif;
+          font-style: italic;
+          font-weight: bold;
+          border-style: double;
+          border-color:DimGray;
+        }
+        h2
+        {
+         text-align: center;
+         color:black;
+          font-family: serif;
+          border-style: dotted;
+          border-color:DimGray   ;
+        }
+        input[type=text]
+        {
+        padding: 5px;
+        border: 2px solid #cccccc;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>~HEART STROKE PREDICTOR~</h1>
+    <h2>⇢Enter your Details⇠</h2>
+    <div>
+        <form class="pure-form pure-form-aligned" method="post" action="/">
+           <label for="username">◈Name:</label>
+           <input type="text" id="username"  placeholder="Username" /><br><br>
+           <label for="age">◈Age:</label>
+           <input type="number" name="age" placeholder="Age" /><br><br>
+           <!--gender-->
+            <p>◈Gender</p>
+             <div>
+             <input type="radio" name="gender" value="0">
+             <label for="male">Male</label>
+             <input type="radio" name="gender" value="1">
+             <label for="female">Female</label>
+             <input type="radio" name="gender" value="2">
+             <label for="other">Other</label><br><br>
+             </div>
+
+           <label for="height">◈Height(in meters)</label>
+           <input type="number" name="height" placeholder="Height(m)" /><br><br>
+           <label for="weight">◈Weight (in kgs)</label>
+           <input type="number" name="weight" placeholder="Weight(kg)" /><br><br>
+           <label for="glucose">◈Glucose level</label>
+           <input type="number"  name="glucose" placeholder="Glucose level" /><br><br>
+
+           <!--Marital status-->
+            <p>◈Marital status</p>
+             <div>
+             <input type="radio" name="marital_status" value="1">
+             <label for="married">Married</label>
+             <input type="radio" name="marital_status" value="0">
+             <label for="single">Single</label><br><br>
+             </div>
+
+            <!--residence-->
+            <p>◈Residence</p>
+             <div>
+             <input type="radio" name="residence" value="1">
+             <label for="urban">Urban</label>
+             <input type="radio" name="residence" value="0">
+             <label for="rural">Rural</label><br><br>
+             </div>
+
+            <!--work type-->
+            <p>◈Work Type</p>
+             <div>
+             <input type="radio" name="work_type" value="0">
+             <label for="private">Private</label><br>
+             <input type="radio" name="work_type" value="1">
+             <label for="self_emp">Self employed</label><br>
+             <input type="radio" name="work_type" value="2">
+             <label for="government">Government</label><br>
+             <input type="radio" name="work_type" value="3">
+             <label for="children">Children</label><br>
+             <input type="radio" name="work_type" value="4">
+             <label for="never_worked">Never worked</label><br><br>
+             </div>
+
+            <!--smoking status-->
+            <p>◈Smoking Status</p>
+             <div>
+             <input type="radio" name="smoking_status" value="0">
+             <label for="formally_smoked">Formally smoked</label><br>
+             <input type="radio" name="smoking_status" value="1">
+             <label for="never_smoked">Never smoked</label><br>
+             <input type="radio" name="smoking_status" value="2">
+             <label for="smoke">Smoke</label><br>
+             <input type="radio" name="smoking_status" value="3">
+             <label for="unknown">Unknown</label><br><br>
+             </div>
+
+            <p>◈Hypertension</p>
+             <div>
+             <input type="radio" id="hypertension" name="hypertension" value="1">
+             <label for="hypertension">Yes</label>
+             <input type="radio" id="hypertension" name="hypertension" value="0">
+             <label for="hypertension">No</label><br><br>
+             </div>
+
+            <p>◈Heart Disease</p>
+             <div>
+             <input type="radio"  name="heart_disease" value="1">
+             <label for="heart_disease">Yes</label>
+             <input type="radio" name="heart_disease" value="0">
+             <label for="heart_disease">No</label><br><br>
+             </div>
+
+            <button type="submit"  class="pure-button pure-button-primary" name="submit" value="Submit">Submit</button>
+
+            <P>{{result}}</P>
+        </form>
+    </div>
+
+</body>
+</html>
