@@ -63,7 +63,7 @@ def function():
                 result = "You are Healthy"
             else:
                 result = "You are Unhealthy"
-    return render_template('healthcare.html', result=result)
+    return render_template('care.html', result=result)
 
 
 app.run(debug=True)
